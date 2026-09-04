@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLARE的个人主页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            background-color: #d4e8c0;
+        }
+
+        .card {
+            max-width: 540px;
+            width: 100%;
+            background: rgba(230, 245, 210, 0.62);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 48px 48px 32px 32px;
+            padding: 44px 40px 36px;
+            box-shadow: 0 20px 48px rgba(80, 110, 60, 0.14), 0 8px 20px rgba(80, 110, 60, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            border: 2px solid rgba(170, 200, 145, 0.4);
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 28px 56px rgba(80, 110, 60, 0.18);
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+            display: block;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 6px 0 rgba(150, 185, 125, 0.5), 0 10px 20px rgba(0, 0, 0, 0.06);
+            object-fit: cover;
+            background: #c8dbb0;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #2a4a1a;
+            letter-spacing: 1.5px;
+            margin-bottom: 2px;
+            text-shadow: 0 1px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        .subhead {
+            font-size: 15px;
+            color: #4a7a38;
+            letter-spacing: 0.5px;
+            border-bottom: 2px dashed rgba(170, 200, 145, 0.5);
+            padding-bottom: 14px;
+            margin-bottom: 20px;
+            display: inline-block;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-weight: 450;
+        }
+
+        .bio {
+            font-size: 14.5px;
+            line-height: 1.8;
+            color: #2a4a1a;
+            background: rgba(255, 255, 255, 0.42);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 16px 20px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            text-align: left;
+            margin-bottom: 16px;
+            font-weight: 420;
+        }
+
+        .bio strong {
+            color: #1a3a0e;
+            font-weight: 600;
+        }
+
+        .bio .highlight {
+            font-size: 13px;
+            color: #4a7a38;
+            display: block;
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        .studio {
+            background: rgba(255, 255, 255, 0.38);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 20px;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            text-align: left;
+        }
+
+        .studio .name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a3a0e;
+            letter-spacing: 0.5px;
+        }
+
+        .studio .name .accent {
+            color: #5a9a3e;
+        }
+
+        .studio .motto {
+            font-size: 15px;
+            font-weight: 500;
+            color: #2a4a1a;
+            margin-top: 4px;
+            padding-left: 2px;
+            letter-spacing: 0.3px;
+        }
+
+        .studio .motto .zh {
+            color: #2a4a1a;
+            font-weight: 500;
+        }
+
+        .studio .desc {
+            font-size: 13.5px;
+            line-height: 1.8;
+            color: #2a4a1a;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1.5px dashed rgba(160, 195, 135, 0.5);
+            font-weight: 420;
+        }
+
+        .studio .desc .line {
+            display: block;
+            padding: 2px 0;
+        }
+
+        .studio .desc .line strong {
+            color: #1a3a0e;
+            font-weight: 600;
+        }
+
+        .studio .desc .line .highlight-text {
+            color: #5a9a3e;
+            font-weight: 500;
+        }
+
+        .game-info {
+            background: rgba(255, 255, 255, 0.38);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 20px;
+            padding: 12px 18px;
+            margin-bottom: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            text-align: left;
+            font-size: 13px;
+            line-height: 2;
+            color: #2a4a1a;
+        }
+
+        .game-info .label {
+            display: inline-block;
+            min-width: 72px;
+            color: #4a7a38;
+            font-weight: 500;
+        }
+
+        .game-info .id {
+            font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+            font-size: 13px;
+            color: #1a3a0e;
+            word-break: break-all;
+            font-weight: 450;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 22px;
+        }
+
+        .links a {
+            background: rgba(255, 255, 255, 0.38);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #2a4a1a;
+            padding: 8px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.12s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            letter-spacing: 0.3px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        .links a:hover {
+            background: rgba(45, 74, 30, 0.75);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #f0f8e8;
+            border-color: rgba(45, 74, 30, 0.6);
+            transform: scale(1.02);
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #5a8a48;
+            margin-top: 18px;
+            padding-top: 14px;
+            border-top: 2px solid rgba(170, 200, 145, 0.35);
+            line-height: 1.7;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 16px;
+            padding: 14px 16px 10px;
+            font-weight: 400;
+        }
+
+        .footer span {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 32px 20px 28px;
+                border-radius: 32px 32px 24px 24px;
+            }
+            .avatar {
+                width: 96px;
+                height: 96px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .bio {
+                font-size: 13.5px;
+                padding: 14px 16px;
+            }
+            .studio {
+                padding: 14px 16px;
+            }
+            .studio .name {
+                font-size: 16px;
+            }
+            .studio .motto {
+                font-size: 14px;
+            }
+            .studio .desc {
+                font-size: 13px;
+            }
+            .game-info {
+                font-size: 12px;
+                padding: 10px 14px;
+            }
+            .game-info .label {
+                min-width: 60px;
+            }
+            .links a {
+                font-size: 13px;
+                padding: 6px 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <img class="avatar" src="avatar.png" alt="CLARE 头像" />
+
+        <h1>CLARE</h1>
+        <div class="subhead">✦ Go for it ✦</div>
+
+        <div class="bio">
+            <strong>个人简介</strong><br />
+            独立开发者 · 动森岛民 · RM 生态贡献者<br />
+            <span class="highlight">
+                正在维护 Chronos Seal · 也玩《塞尔达传说》《斯普拉遁》《暗黑破坏神》《星际争霸》
+            </span>
+        </div>
+
+        <!-- 工作室区块 -->
+        <div class="studio">
+            <div class="name">
+                CrCLARE <span class="accent">工作室</span>
+            </div>
+            <div class="motto">
+                <span class="zh">奔赴顶峰 · 保持热爱</span>
+            </div>
+            <div class="desc">
+                <span class="line"><strong>CrCLARE 工作室</strong> 核心业务：</span>
+                <span class="line">· 原创世界观及小说《宇宙乡纪》的改编</span>
+                <span class="line">· RPG Maker 游戏《征途（Going Future）》</span>
+                <span class="line">· 开源运行时完整性保护项目 <span class="highlight-text">Chronos Seal</span></span>
+            </div>
+        </div>
+
+        <!-- 游戏信息 -->
+        <div class="game-info">
+            <div>
+                <span class="label">Steam ID</span>
+                <span class="id">1691388192</span>
+            </div>
+            <div>
+                <span class="label">Nintendo Switch 好友码</span>
+                <span class="id">SW-2686-1511-8220</span>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/CLARE-XHL" target="_blank">GitHub</a>
+            <a href="https://blog.crclare.top" target="_blank">博客</a>
+            <a href="https://docs.crclare.top" target="_blank">Chronos Seal</a>
+            <a href="https://afdian.com/a/crclare" target="_blank">爱发电</a>
+        </div>
+
+        <div class="footer">
+            <span>《集合啦！动物森友会》视觉版权归任天堂所有</span><br />
+            <span>© <span id="year"></span> CLARE · CrCLARE 工作室</span>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
