@@ -17,7 +17,7 @@
 
 # 🎮 玩家档案 | PLAYER PROFILE
 
-> *"Here's to the crazy ones. The misfits. The rebels. The troublemakers."*
+> *"echo("Hello World !"),Create Wonderful Code,Build A Wonderful World."*
 
 我是 **CLARE**，14岁独立开发者，**[CrCLARE 工作室](https://crclare.top)** 创始人。
 
