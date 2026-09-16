@@ -14,14 +14,15 @@
 </div>
 <br>
 
-<!-- 贪吃蛇代码贡献图 -->
+<!-- 太空主题动态星图 (galaxy-profile 生成器) -->
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vinimlo/galaxy-profile/main/assets/generated/galaxy-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vinimlo/galaxy-profile/main/assets/generated/galaxy-light.svg" />
+    <img alt="Galaxy Profile" src="https://raw.githubusercontent.com/vinimlo/galaxy-profile/main/assets/generated/galaxy-dark.svg" />
   </picture>
 </div>
+<br>
 
 # 🙋 Hello, World!
 
@@ -57,17 +58,20 @@
 # 🎯 𝙼𝚎𝚝𝚛𝚒𝚌𝚜 & 𝙰𝚌𝚝𝚒𝚟𝚒𝚝𝚢
 
 <div align="center">
+  <!-- GitHub 连续提交记录 -->
   <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=CLARE-XHL&theme=dark&hide_border=true" />
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=CLARE-XHL&show_icons=true&theme=dark&hide_border=true" />
 </div>
 <br>
 
 <div align="center">
+  <!-- GitHub 奖杯 -->
   <img src="https://github-profile-trophy.vercel.app/?username=CLARE-XHL&theme=gruvbox&row=1&column=7&no-frame=true&no-bg=true" />
 </div>
 <br>
 
 <div align="center">
+  <!-- 常用语言 -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CLARE-XHL&layout=compact&theme=dark&hide_border=true" />
 </div>
 
