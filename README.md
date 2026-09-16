@@ -19,7 +19,7 @@
 
 > *"echo("Hello World !"),Create Wonderful Code,Build A Wonderful World."*
 
-我是 **CLARE**，14岁独立开发者，**[CrCLARE 工作室](https://crclare.top)** 创始人。
+我是 **CLARE**，独立开发者，**[CrCLARE 工作室](https://crclare.top)** 创始人。
 
 🎯 **座右铭**：Go for it. 
 🏔️ **口号**：奔赴顶峰，保持热爱（Here We Go）
