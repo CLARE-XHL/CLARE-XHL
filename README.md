@@ -1,4 +1,4 @@
-<!-- 动态打字效果 -->
+<!-- Dynamic Typing Effect -->
 <h1 align="center">
   <a href="https://crclare.top">
     <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=PLAYER%3A+CLARE;LV.14+Independent+Developer;Go+for+it.;%E5%A5%94%E8%B5%B4%E9%A1%B6%E5%B3%B0%EF%BC%8C%E4%BF%9D%E6%8C%81%E7%83%AD%E7%88%B1">
@@ -12,36 +12,38 @@
 </div>
 <br>
 
-<!-- 像素风分隔线 -->
+[English](./README.md) | [简体中文](./README.zh.md)
+
+<!-- Pixel-style divider -->
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
-# 🎮 玩家档案 | PLAYER PROFILE
+# 🎮 PLAYER PROFILE
 
 > *"echo("Hello World !"),Create Wonderful Code,Build A Wonderful World."*
 
-我是 **CLARE**，独立开发者，**[CrCLARE 工作室](https://crclare.top)** 创始人。
+I'm **CLARE**, an independent developer and founder of **[CrCLARE Studio](https://crclare.top)**.
 
-🎯 **座右铭**：Go for it. 
-🏔️ **口号**：奔赴顶峰，保持热爱（Here We Go）
+🎯 **Motto**: Go for it.
+🏔️ **Slogan**: Here We Go.
 
-**🎮 联机邀请：**
+**🎮 Online IDs:**
 *   **Steam**: `1691388192`
 *   **Nintendo Switch**: `SW-2686-1511-8220`
 
 ---
 
-# 🚀 正在运行的游戏项目
+# 🚀 Currently Running Projects
 
-*   🛡️ **[Chronos Seal](https://github.com/CrCLARE/Chronos-Seal)** —— RM MV/MZ 运行时保护方案（C++底层、零知识密钥、CSDP增量补丁）
-*   🎮 **Going Future（征途）** —— 独立游戏制作中
-*   📝 **《宇宙乡·纪》** —— 原创小说，探索“广阔世界”
+*   🛡️ **[Chronos Seal](https://github.com/CrCLARE/Chronos-Seal)** —— Runtime protection for RM MV/MZ (C++ native layer, zero-knowledge keys, CSDP incremental patches)
+*   🎮 **Going Future** —— Indie game in development
+*   📝 **《Space Country》** —— Original novel, exploring a "vast world"
 
-**🧗 折腾过的硬核成就：**
-黑苹果 OpenCore · 3DS 破解 · NS 软破 · 云端 CI/CD 地狱 · N-API 跨版本编译
+**🧗 Hardcore Achievements:**
+Hackintosh OpenCore · 3DS Hacking · NS Softmod · Cloud CI/CD Hell · N-API Cross-Version Compilation
 
 ---
 
-# 🛠️ 装备面板 | TECH STACK
+# 🛠️ TECH STACK
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=cpp,js,python,java,html,css,git,docker,visualstudio,nodejs,electron&theme=dark" />
@@ -50,20 +52,20 @@
 
 ---
 
-# 🕹️ 常驻游戏
+# 🕹️ Games I Play
 
-`暗黑破坏神 (死灵法师本命)` · `星际争霸（长子，万世长存）` · `动物森友会` · `斯普拉遁`· `塞尔达传说`
+`Diablo (Necromancer main)` · `StarCraft (My eldest son, eternal)` · `Animal Crossing` · `Splatoon` · `The Legend of Zelda`
 
 ---
 
-# 🌐 建立连接
+# 🌐 Connect
 
-*   **组织空间站**: [@CrCLARE](https://github.com/CrCLARE)
-*   **全息文档**: [docs.crclare.top](https://docs.crclare.top)
-*   **母星主页**: [crclare.top](https://crclare.top)
+*   **Organization**: [@CrCLARE](https://github.com/CrCLARE)
+*   **Docs**: [docs.crclare.top](https://docs.crclare.top)
+*   **Website**: [crclare.top](https://crclare.top)
 
 ---
 
 <div align="center">
-  <b>Go for it. 奔赴顶峰，保持热爱 (Here We Go).</b>
+  <b>Go for it. Here We Go.</b>
 </div>
